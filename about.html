@@ -1,75 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="About Me">
+  <meta name="keywords" content="NilBrains,about">
+  <meta name="author" content="NilBrains">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>关于</title>
-  <style>
-    html {
-      font-size: 15px;
-    }
-
-    body {
-      background-color: #222;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      padding: 0;
-    }
-
-    h1 {
-      color: #333;
-      font-family: Helvetica;
-      margin: 0;
-      padding: 0;
-      font-size: 8rem;
-      letter-spacing: -0.3rem;
-      position: relative;
-    }
-
-    h1::after {
-      content: attr(data-spotlight);
-      color: transparent;
-      position: absolute;
-      top: 0;
-      left: 0;
-      -webkit-clip-path: ellipse(100px 100px at 0% 50%);
-      clip-path: ellipse(100px 100px at 0% 50%);
-      animation: spotlight 5s infinite;
-      background-image: url(https://images.unsplash.com/photo-1579547621869-0ddb5f237392?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
-      background-size: 150%;
-      background-position: center center;
-      -webkit-background-clip: text;
-      background-clip: text;
-    }
-
-    @keyframes spotlight {
-      0% {
-        -webkit-clip-path: ellipse(100px 100px at 0% 50%);
-        clip-path: ellipse(100px 100px at 0% 50%);
-      }
-
-      50% {
-        -webkit-clip-path: ellipse(100px 100px at 100% 50%);
-        clip-path: ellipse(100px 100px at 100% 50%);
-      }
-
-      100% {
-        -webkit-clip-path: ellipse(100px 100px at 0% 50%);
-        clip-path: ellipse(100px 100px at 0% 50%);
-      }
-    }
-  </style>
+  <title>关于我</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/nil.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/iconfont.css">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+  <link rel="icon" href="./favicon.ico">
 </head>
 
 <body>
-  <h1 data-spotlight="还在准备中">还在准备中</h1>
-  <script>
-    console.log("此特效来自‘CodingStartup’");
-  </script>
+  <span class="mobile btn-mobile-menu">
+    <i class="social iconfont icon-list btn-mobile-menu__icon"></i>
+    <i class="social iconfont icon-angleup btn-mobile-close__icon hidden"></i>
+  </span>
+  <main id="panel" class="panel-cover">
+    <div class="panel-main">
+      <div class="panel-main__inner panel-inverted">
+        <div class="panel-main__content">
+          <br>
+          <h1 class="panel-cover__title panel-title iUp">
+            <a href="#" title="NilBrains Home">Nilbrains</a>
+          </h1>
+          <p class="panel-cover__subtitle panel-subtitle iUp">愛してる</p>
+          <hr class="panel-cover__divider iUp" />
+          <p id="description" class="panel-cover__description iUp">在我电脑上是正常的啊!<strong> ~『 某猿 』</strong>
+          </p>
+          <hr class="panel-cover__divider iUp" />
+          <p class="about-me iUp">目前专科在读</p>
+          <p class="about-me iUp"><strong>长期</strong>生活在浙江以北地区</p>
+          <p class="about-me iUp">想要认识更多有趣的灵魂</p>
+          <p class="about-me iUp">目标&lt;==&gt;<strong>全栈</strong></p>
+          <p class="about-me iUp">-<strong>Android</strong>- -<strong>js</strong>- 学习i中</p>
+        </div>
+      </div>
+      <div class="panel-cover--overlay cover-slate"></div>
+    </div>
+    <div class="remark iUp">
+      <p class="power">Powered By
+        <a href="https://bird.ioliu.cn/" target="_blank"> JsonBird </a> And
+        <a href="https://hitokoto.cn/" target="_blank"> Hitokoto </a>
+      </p>
+    </div>
+  </main>
+  <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="./assets/js/fetch.min.js"></script>
+  <script type="text/javascript" src="./assets/js/main.js"></script>
 </body>
-
 </html>

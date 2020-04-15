@@ -8052,6 +8052,9 @@ hr {
   -webkit-transition: width 1s;
   /* Safari */
 }
+.about-me{
+  margin: 0 30px;
+}
 
 .panel-inverted {
   font-weight: 100;

@@ -73,10 +73,12 @@ $(document).ready(function () {
 	$(".iUp").each(function (i, e) {
 		iUp.up(e);
 	});
-
-	$(".js-avatar")[0].onload = function () {
-		$(".js-avatar").addClass("show");
+	if($(".js-avatar")[0]!=null){
+		$(".js-avatar")[0].onload = function () {
+			$(".js-avatar").addClass("show");
+		}
 	}
+
 });
 //mobile nav
 $('.btn-mobile-menu__icon').click(function() {
